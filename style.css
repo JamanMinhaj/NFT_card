@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* this design only */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #0D1A2D;
+}
+.wrapper {
+    max-width: 350px;
+    margin-inline: auto;
+    padding: 1rem;
+    background-color: #15273F;
+    border-radius: 10px;
+    box-shadow: 12px 25px 10px rgba(0, 0, 0, 0.113),
+                -10px 0px 10px rgba(0, 0, 0, 0.113);
+}
+
+.wrapper img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.hero {
+    position: relative;
+}
+.eye {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(0, 216, 254, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+.eye:hover {
+        opacity: 1;
+        cursor: pointer;
+}
+.blog_description {
+    padding: .759rem 0;
+}
+
+.blog_description p {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 17px;
+}
+.blog_description h2 a {
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+.blog_description h2 a:hover {
+    color: #07f7f0;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex p {
+    margin: 0;
+}
+.footer {
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+    padding: .640rem 0;
+}
+.footer a {
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+.footer a span {
+    color:#6C85A7;
+    opacity: 0.7;
+}
+.footer a:hover(:not .c_color){
+    color: #07f7f0;
+    opacity: 1;
+}
