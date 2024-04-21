@@ -26,6 +26,20 @@ body {
     border-radius: 10px;
     box-shadow: 12px 25px 10px rgba(0, 0, 0, 0.113),
                 -10px 0px 10px rgba(0, 0, 0, 0.113);
+    position: relative;
+    transition: all 0.8s ease-in;
+    animation: animate;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes animate {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 .wrapper img {
